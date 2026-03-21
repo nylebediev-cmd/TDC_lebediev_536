@@ -1,123 +1,76 @@
-import speech_recognition as srec
 import soundfile as sf
-from math import gcd
-from scipy.signal import resample_poly, butter, sosfiltfilt
 import numpy as np
 import matplotlib.pyplot as plt
+from skimage.restoration import denoise_wavelet, denoise_invariant, denoise_tv_chambolle, denoise_bilateral
+import pywt
 
-
+# Шляхи до аудіо файлів
+NAME_ORIGINAL_WAV = f"./Sounds/Sound_44100[Hz]_2[byte].wav"
 SAMPLE_RATE = 44100
-SAMPLE_WIDTH = 2
 DTYPE = np.int16
 
-NAME_ORIGINAL_WAV = f"./Sounds/Sound_{SAMPLE_RATE}[Hz]_{SAMPLE_WIDTH}[byte].wav"
-NAME_ORIGINAL_RAW = f"./Sounds/Sound_{SAMPLE_RATE}[Hz]_{SAMPLE_WIDTH}[byte].raw"
-NAME_RESAMPLED_WAV = "./Sounds/Sound_4000[Hz]_2[byte].wav"
-NAME_RESAMPLED_RAW = "./Sounds/Sound_4000[Hz]_2[byte].raw"
-NAME_FILTERED_WAV = "./Sounds/Filtered_4000[Hz]_2[byte].wav"
-NAME_FILTERED_RAW = "./Sounds/Filtered_4000[Hz]_2[byte].raw"
+# --- Функції фільтрації ---
 
+def wavelet_denoiser(signal, level, mode, wavelet):
+    """
+    Denoise a 1D signal using Discrete Wavelet Transform (DWT) thresholding.
+    """
+    coeffs = pywt.wavedec(signal, wavelet, level=level)
+    sigma = np.median(np.abs(coeffs[-1])) / 0.6745
+    threshold = sigma * np.sqrt(2 * np.log(signal.size))
+    denoised_coeffs = [coeffs[0]] + [pywt.threshold(c, threshold, mode=mode) for c in coeffs[1:]]
+    denoised_signal = pywt.waverec(denoised_coeffs, wavelet)
+    return denoised_signal[:len(signal)]
 
-def sound_recoder(rec, mic):
-    with mic as source:
-        print("Говоріть...")
-        audio = rec.listen(source)
+def invarince_denoiser(image, **kwargs):
+    """
+    J-Invariance denoising using wavelet with sigma=0.5.
+    """
+    return denoise_wavelet(image, sigma=0.5, wavelet='db4', mode='soft')
 
-    # --- WAV ---
-    wav_data = audio.get_wav_data(
-        convert_rate=SAMPLE_RATE,
-        convert_width=SAMPLE_WIDTH
-    )
-
-    with open(NAME_ORIGINAL_WAV, "wb") as f:
-        f.write(wav_data)
-
-    # --- RAW ---
-    raw_data = audio.get_raw_data(
-        convert_rate=SAMPLE_RATE,
-        convert_width=SAMPLE_WIDTH
-    )
-
-    with open(NAME_ORIGINAL_RAW, "wb") as f:
-        f.write(raw_data)
-
-    # --- РЕСЕМПЛИНГ WAV ---
+# --- Основна функція для фільтрації ---
+def sound_filter():
+    # Зчитування аудіо
     data, fs_original = sf.read(NAME_ORIGINAL_WAV)
-    fs_target = 4000
+    time = np.arange(len(data)) / fs_original
 
-    g = gcd(fs_original, fs_target)
-    up = fs_target // g
-    down = fs_original // g
+    # Перетворення в 2D для деяких фільтрів
+    data_2d = data.reshape(1, -1)
 
-    data_resampled = resample_poly(data, up, down)
-    sf.write(NAME_RESAMPLED_WAV, data_resampled, fs_target)
+    # --- Виконання фільтрації ---
+    invariance = denoise_invariant(data_2d, denoise_function=invarince_denoiser).flatten()
+    total_variation = denoise_tv_chambolle(data_2d, weight=0.1, channel_axis=None).flatten()
+    bilateral = denoise_bilateral(data_2d, sigma_color=0.05, sigma_spatial=15, channel_axis=None).flatten()
+    wavelet = wavelet_denoiser(data, level=5, mode='soft', wavelet='db4')
 
-    # --- РЕСЕМПЛИНГ RAW ---
-    with open(NAME_ORIGINAL_RAW, "rb") as f:
-        raw_bytes = f.read()
+    # --- Збереження фільтрованих сигналів ---
+    sf.write("./Sounds/Filtered_Invariance.wav", invariance, SAMPLE_RATE)
+    sf.write("./Sounds/Filtered_Total_Variation.wav", total_variation, SAMPLE_RATE)
+    sf.write("./Sounds/Filtered_Bilateral.wav", bilateral, SAMPLE_RATE)
+    sf.write("./Sounds/Filtered_Wavelet.wav", wavelet, SAMPLE_RATE)
 
-    signal = np.frombuffer(raw_bytes, dtype=DTYPE)
-    signal_float = signal.astype(np.float32) / 32768.0
+    # --- Візуалізація результатів ---
+    filters = {
+        "J-Invariance": invariance,
+        "Total Variation (TV)": total_variation,
+        "Bilateral": bilateral,
+        "Wavelet (db4)": wavelet
+    }
 
-    resampled = resample_poly(signal_float, up, down)
-    resampled_int16 = np.int16(resampled * 32767)
-
-    with open(NAME_RESAMPLED_RAW, "wb") as f:
-        f.write(resampled_int16.tobytes())
-
-    # --- ФИЛЬТРАЦИЯ WAV ---
-    data, fs_original = sf.read(NAME_ORIGINAL_WAV)
-
-    if len(data.shape) > 1:
-        data = data[:, 0]
-
-    cutoff = 4000
-    order = 6
-
-    sos = butter(order, cutoff, btype='low', fs=SAMPLE_RATE, output='sos')
-    filtered = sosfiltfilt(sos, data)
-
-    sf.write(NAME_FILTERED_WAV, filtered, SAMPLE_RATE)
-
-    # --- ФИЛЬТРАЦИЯ RAW ---
-    with open(NAME_ORIGINAL_RAW, "rb") as f:
-        raw_bytes = f.read()
-
-    signal = np.frombuffer(raw_bytes, dtype=DTYPE)
-    signal_float = signal.astype(np.float32) / 32768.0
-
-    filtered_raw = sosfiltfilt(sos, signal_float)
-    filtered_int16 = np.int16(filtered_raw * 32767)
-
-    with open(NAME_FILTERED_RAW, "wb") as f:
-        f.write(filtered_int16.tobytes())
-
-    # --- ГРАФИК ---
-    data, fs = sf.read(NAME_ORIGINAL_WAV)
-    time = np.arange(len(data)) / fs
-
-    plt.figure(figsize=(12, 6))
-    plt.plot(time, data, label=f"Оригінал (fs={SAMPLE_RATE} Гц)")
-
-    data, fs = sf.read(NAME_RESAMPLED_WAV)
-    time = np.arange(len(data)) / fs
-    plt.plot(time, data, label=f"Ресемпл (fs={fs} Гц)")
-
-    data, fs = sf.read(NAME_FILTERED_WAV)
-    time = np.arange(len(data)) / fs
-    plt.plot(time, data, label=f"Фільтрований (LPF {cutoff} Гц)")
-
-    plt.title("Порівняння сигналів у часовій області")
-    plt.xlabel("Час (с)")
-    plt.ylabel("Амплітуда")
-    plt.grid(True)
-    plt.legend()
-    plt.tight_layout()
-    plt.show()
+    for name, filtered_signal in filters.items():
+        plt.figure(figsize=(10, 6))
+        plt.plot(time, data, 'b-', label='Original Signal')
+        plt.plot(time, filtered_signal, 'g-', linewidth=2, label=name)
+        plt.title(f"Фільтрація сигналу: {name}")
+        plt.xlabel("Час (с)")
+        plt.ylabel("Амплітуда")
+        plt.legend()
+        plt.grid(True)
+        plt.tight_layout()
+        plt.show()
+        plt.savefig(f"./Sounds/Figure_{name.replace(' ', '_')}.png")
 
 
+# --- Виклик основної функції ---
 if __name__ == "__main__":
-    recognizer = srec.Recognizer()
-    microphone = srec.Microphone(device_index=1, sample_rate=SAMPLE_RATE)
-
-    sound_recoder(recognizer, microphone)
+    sound_filter()
