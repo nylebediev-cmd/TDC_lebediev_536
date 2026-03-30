@@ -7,6 +7,11 @@
     <list default="true" id="d74283be-bb37-47e2-98da-5d47af046bd9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Signal Processing/Signal_processing.py" beforeDir="false" afterPath="$PROJECT_DIR$/Signal Processing/Signal_processing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Signal Processing/figures/snr.png" beforeDir="false" afterPath="$PROJECT_DIR$/Signal Processing/figures/snr.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Signal Processing/figures/variance.png" beforeDir="false" afterPath="$PROJECT_DIR$/Signal Processing/figures/variance.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Signal Processing/figures/Відновлені сигнали.png" beforeDir="false" afterPath="$PROJECT_DIR$/Signal Processing/figures/Відновлені сигнали.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Signal Processing/figures/Дискретизовані сигнали.png" beforeDir="false" afterPath="$PROJECT_DIR$/Signal Processing/figures/Дискретизовані сигнали.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Signal Processing/figures/Спектри дискретизованих сигналів.png" beforeDir="false" afterPath="$PROJECT_DIR$/Signal Processing/figures/Спектри дискретизованих сигналів.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,33 +52,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.Signal_processing.executor": "Run",
-    "Python.main.executor": "Run",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "ai.playground.ignore.import.keys.banner.in.settings": "true",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "SignalProcessing",
-    "ignore.virus.scanning.warn.message": "true",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "C:/Users/nlebe/PycharmProjects/TDC_lebediev_536",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.Signal_processing.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ai.playground.ignore.import.keys.banner.in.settings&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;SignalProcessing&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/nlebe/PycharmProjects/TDC_lebediev_536&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\nlebe\PycharmProjects\TDC_lebediev_536\Sounds" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="TDC_lebediev_536" />
@@ -126,7 +136,9 @@
       <workItem from="1773985733514" duration="3550000" />
       <workItem from="1774071831609" duration="1447000" />
       <workItem from="1774073333568" duration="1533000" />
-      <workItem from="1774548364482" duration="2222000" />
+      <workItem from="1774548364482" duration="3264000" />
+      <workItem from="1774682050816" duration="11000" />
+      <workItem from="1774898180439" duration="2016000" />
     </task>
     <servers />
   </component>
@@ -144,7 +156,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="dev" />
+                        <option value="practical" />
                       </list>
                     </value>
                   </entry>
@@ -157,7 +169,7 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/TDC_lebediev_536$main.coverage" NAME="main Coverage Results" MODIFIED="1774548603049" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/TDC_lebediev_536$Signal_processing.coverage" NAME="Signal_processing Coverage Results" MODIFIED="1774550490313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Signal Processing" />
+    <SUITE FILE_PATH="coverage/TDC_lebediev_536$main.coverage" NAME="main Coverage Results" MODIFIED="1774898481533" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TDC_lebediev_536$Signal_processing.coverage" NAME="Signal_processing Coverage Results" MODIFIED="1774899809791" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Signal Processing" />
   </component>
 </project>
