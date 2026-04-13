@@ -1,0 +1,80 @@
+Тестова послідовність №1
+Sequence: 0000000000000000100000100000000000000000000000000000000100000100000000000100000000000000100001100000
+Alphabet size: 2
+Size: 100 bytes
+Probabilities: 0=0.9200, 1=0.0800
+Mean Probability: 0.5000
+Type: нерівна
+Entropy: 0.4022
+Redundancy: 0.5978
+--------------------------------------------------
+Тестова послідовність №2
+Sequence: Lebediev00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+Alphabet size: 7
+Size: 100 bytes
+Probabilities: L=0.0100, e=0.0300, b=0.0100, d=0.0100, i=0.0100, v=0.0100, 0=0.9200
+Mean Probability: 0.1429
+Type: нерівна
+Entropy: 0.5946
+Redundancy: 0.7882
+--------------------------------------------------
+Тестова послідовність №3
+Sequence: 000d00000000000v0b0000000000000e00e00000000i0000000000000000000000000000000000L000000000000000000e00
+Alphabet size: 7
+Size: 100 bytes
+Probabilities: 0=0.9200, d=0.0100, v=0.0100, b=0.0100, e=0.0300, i=0.0100, L=0.0100
+Mean Probability: 0.1429
+Type: нерівна
+Entropy: 0.5946
+Redundancy: 0.7882
+--------------------------------------------------
+Тестова послідовність №4
+Sequence: Lebediev536Lebediev536Lebediev536Lebediev536Lebediev536Lebediev536Lebediev536Lebediev536Lebediev536L
+Alphabet size: 9
+Size: 100 bytes
+Probabilities: L=0.1000, e=0.2700, b=0.0900, d=0.0900, i=0.0900, v=0.0900, 5=0.0900, 3=0.0900, 6=0.0900
+Mean Probability: 0.1111
+Type: нерівна
+Entropy: 3.0308
+Redundancy: 0.0439
+--------------------------------------------------
+Тестова послідовність №5
+Sequence: 5ee3ee5e3L656L5333L336L633356633L3eeLe56L6e63LL66565e5eL65e55L55eLe6L356e3L56L3653ee63L63eeLLL5L565e
+Alphabet size: 5
+Size: 100 bytes
+Probabilities: 5=0.2000, e=0.2000, 3=0.2000, L=0.2000, 6=0.2000
+Mean Probability: 0.2000
+Type: рівна
+Entropy: 2.3219
+Redundancy: 0.0000
+--------------------------------------------------
+Тестова послідовність №6
+Sequence: 33eeLeeLeLeLLeeL5Leeee55L5eLLLLe6L35eeeLLL3LeeeL6Le366Le5ee5ee5Le5e55e5e3eL5Le3e65Le5LLeee3eLee5eeL5
+Alphabet size: 5
+Size: 100 bytes
+Probabilities: 3=0.0800, e=0.4200, L=0.2800, 5=0.1700, 6=0.0500
+Mean Probability: 0.2000
+Type: нерівна
+Entropy: 1.9821
+Redundancy: 0.1464
+--------------------------------------------------
+Тестова послідовність №7
+Sequence: lhyb7if73rwj4g2cqbkxkgrqgy1kc08xw7zviyuvqsvp9mgyyy5debz20y6o4mf8fq62ab7nhejqw55o0soj94j3xz8zrkxywqnu
+Alphabet size: 35
+Size: 100 bytes
+Probabilities: l=0.0100, h=0.0200, y=0.0800, b=0.0400, 7=0.0400, i=0.0200, f=0.0300, 3=0.0200, r=0.0300, w=0.0400, j=0.0400, 4=0.0300, g=0.0400, 2=0.0300, c=0.0200, q=0.0600, k=0.0400, x=0.0400, 1=0.0100, 0=0.0300, 8=0.0300, z=0.0400, v=0.0300, u=0.0200, s=0.0200, p=0.0100, 9=0.0200, m=0.0200, 5=0.0300, d=0.0100, e=0.0200, 6=0.0200, o=0.0300, a=0.0100, n=0.0200
+Mean Probability: 0.0286
+Type: нерівна
+Entropy: 4.9608
+Redundancy: 0.0328
+--------------------------------------------------
+Тестова послідовність №8
+Sequence: 1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+Alphabet size: 1
+Size: 100 bytes
+Probabilities: 1=1.0000
+Mean Probability: 1.0000
+Type: рівна
+Entropy: -0.0000
+Redundancy: 1.0000
+--------------------------------------------------
