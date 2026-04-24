@@ -1,0 +1,417 @@
+
+--- Sequence 1 ---
+Original: 0000000000000000100000100000000000000000000000000000000100000100000000000100000000000000100001100000
+Entropy: 0.4022
+Input size: 1600 bits
+Code: 48, Element: 0, Bits: 16
+Code: 65536, Element: 00, Bits: 17
+Code: 65537, Element: 000, Bits: 17
+Code: 65538, Element: 0000, Bits: 17
+Code: 65539, Element: 00000, Bits: 17
+Code: 48, Element: 0, Bits: 16
+Code: 49, Element: 1, Bits: 16
+Code: 65539, Element: 00000, Bits: 17
+Code: 65542, Element: 10, Bits: 17
+Code: 65540, Element: 000000, Bits: 17
+Code: 65545, Element: 0000000, Bits: 17
+Code: 65546, Element: 00000000, Bits: 17
+Code: 65547, Element: 000000000, Bits: 17
+Code: 65541, Element: 01, Bits: 17
+Code: 65543, Element: 000001, Bits: 17
+Code: 65548, Element: 0000000000, Bits: 17
+Code: 65549, Element: 010, Bits: 17
+Code: 65551, Element: 00000000000, Bits: 17
+Code: 65536, Element: 00, Bits: 17
+Code: 65544, Element: 100, Bits: 17
+Code: 65554, Element: 001, Bits: 17
+Code: 65555, Element: 1000, Bits: 17
+Code: 65536, Element: 00, Bits: 17
+RLE Result: 1601150113201150111101114011402150
+RLE CR: 2.94
+LZW Codes: [48, 65536, 65537, 65538, 65539, 48, 49, 65539, 65542, 65540, 65545, 65546, 65547, 65541, 65543, 65548, 65549, 65551, 65536, 65544, 65554, 65555, 65536]
+LZW Size: 388 bits
+LZW CR: 4.12
+
+--- Sequence 2 ---
+Original: Lebediev00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+Entropy: 0.5946
+Input size: 1600 bits
+Code: 76, Element: L, Bits: 16
+Code: 101, Element: e, Bits: 16
+Code: 98, Element: b, Bits: 16
+Code: 101, Element: e, Bits: 16
+Code: 100, Element: d, Bits: 16
+Code: 105, Element: i, Bits: 16
+Code: 101, Element: e, Bits: 16
+Code: 118, Element: v, Bits: 16
+Code: 48, Element: 0, Bits: 16
+Code: 65544, Element: 00, Bits: 17
+Code: 65545, Element: 000, Bits: 17
+Code: 65546, Element: 0000, Bits: 17
+Code: 65547, Element: 00000, Bits: 17
+Code: 65548, Element: 000000, Bits: 17
+Code: 65549, Element: 0000000, Bits: 17
+Code: 65550, Element: 00000000, Bits: 17
+Code: 65551, Element: 000000000, Bits: 17
+Code: 65552, Element: 0000000000, Bits: 17
+Code: 65553, Element: 00000000000, Bits: 17
+Code: 65554, Element: 000000000000, Bits: 17
+Code: 65555, Element: 0000000000000, Bits: 17
+Code: 48, Element: 0, Bits: 16
+RLE Result: 1L1e1b1e1d1i1e1v920
+RLE CR: 5.26
+LZW Codes: [76, 101, 98, 101, 100, 105, 101, 118, 48, 65544, 65545, 65546, 65547, 65548, 65549, 65550, 65551, 65552, 65553, 65554, 65555, 48]
+LZW Size: 364 bits
+LZW CR: 4.4
+
+--- Sequence 3 ---
+Original: 000d00000000000v0b0000000000000e00e00000000i0000000000000000000000000000000000L000000000000000000e00
+Entropy: 0.5946
+Input size: 1600 bits
+Code: 48, Element: 0, Bits: 16
+Code: 65536, Element: 00, Bits: 17
+Code: 100, Element: d, Bits: 16
+Code: 65536, Element: 00, Bits: 17
+Code: 65539, Element: 000, Bits: 17
+Code: 65540, Element: 0000, Bits: 17
+Code: 65536, Element: 00, Bits: 17
+Code: 118, Element: v, Bits: 16
+Code: 48, Element: 0, Bits: 16
+Code: 98, Element: b, Bits: 16
+Code: 65541, Element: 00000, Bits: 17
+Code: 65546, Element: 000000, Bits: 17
+Code: 65536, Element: 00, Bits: 17
+Code: 101, Element: e, Bits: 16
+Code: 65548, Element: 00e, Bits: 17
+Code: 65547, Element: 0000000, Bits: 17
+Code: 48, Element: 0, Bits: 16
+Code: 105, Element: i, Bits: 16
+Code: 65551, Element: 00000000, Bits: 17
+Code: 65554, Element: 000000000, Bits: 17
+Code: 65555, Element: 0000000000, Bits: 17
+Code: 65547, Element: 0000000, Bits: 17
+Code: 76, Element: L, Bits: 16
+Code: 65556, Element: 00000000000, Bits: 17
+Code: 65547, Element: 0000000, Bits: 17
+Code: 65549, Element: e0, Bits: 17
+Code: 48, Element: 0, Bits: 16
+RLE Result: 301d1101v101b1301e201e801i3401L1801e20
+RLE CR: 2.63
+LZW Codes: [48, 65536, 100, 65536, 65539, 65540, 65536, 118, 48, 98, 65541, 65546, 65536, 101, 65548, 65547, 48, 105, 65551, 65554, 65555, 65547, 76, 65556, 65547, 65549, 48]
+LZW Size: 449 bits
+LZW CR: 3.56
+
+--- Sequence 4 ---
+Original: Lebediev536Lebediev536Lebediev536Lebediev536Lebediev536Lebediev536Lebediev536Lebediev536Lebediev536L
+Entropy: 3.0308
+Input size: 1600 bits
+Code: 76, Element: L, Bits: 16
+Code: 101, Element: e, Bits: 16
+Code: 98, Element: b, Bits: 16
+Code: 101, Element: e, Bits: 16
+Code: 100, Element: d, Bits: 16
+Code: 105, Element: i, Bits: 16
+Code: 101, Element: e, Bits: 16
+Code: 118, Element: v, Bits: 16
+Code: 53, Element: 5, Bits: 16
+Code: 51, Element: 3, Bits: 16
+Code: 54, Element: 6, Bits: 16
+Code: 65536, Element: Le, Bits: 17
+Code: 65538, Element: be, Bits: 17
+Code: 65540, Element: di, Bits: 17
+Code: 65542, Element: ev, Bits: 17
+Code: 65544, Element: 53, Bits: 17
+Code: 65546, Element: 6L, Bits: 17
+Code: 65537, Element: eb, Bits: 17
+Code: 65539, Element: ed, Bits: 17
+Code: 65541, Element: ie, Bits: 17
+Code: 65543, Element: v5, Bits: 17
+Code: 65545, Element: 36, Bits: 17
+Code: 65547, Element: Leb, Bits: 17
+Code: 65554, Element: edi, Bits: 17
+Code: 65550, Element: ev5, Bits: 17
+Code: 65557, Element: 36L, Bits: 17
+Code: 65553, Element: ebe, Bits: 17
+Code: 65549, Element: die, Bits: 17
+Code: 65556, Element: v53, Bits: 17
+Code: 65552, Element: 6Le, Bits: 17
+Code: 65548, Element: bed, Bits: 17
+Code: 65555, Element: iev, Bits: 17
+Code: 65551, Element: 536, Bits: 17
+Code: 65558, Element: Lebe, Bits: 17
+Code: 65563, Element: diev, Bits: 17
+Code: 65568, Element: 536L, Bits: 17
+Code: 65562, Element: ebed, Bits: 17
+Code: 65567, Element: iev5, Bits: 17
+Code: 65561, Element: 36Le, Bits: 17
+Code: 65566, Element: bedi, Bits: 17
+Code: 65560, Element: ev53, Bits: 17
+Code: 65546, Element: 6L, Bits: 17
+RLE Result: 1L1e1b1e1d1i1e1v1513161L1e1b1e1d1i1e1v1513161L1e1b1e1d1i1e1v1513161L1e1b1e1d1i1e1v1513161L1e1b1e1d1i1e1v1513161L1e1b1e1d1i1e1v1513161L1e1b1e1d1i1e1v1513161L1e1b1e1d1i1e1v1513161L1e1b1e1d1i1e1v1513161L
+RLE CR: -
+LZW Codes: [76, 101, 98, 101, 100, 105, 101, 118, 53, 51, 54, 65536, 65538, 65540, 65542, 65544, 65546, 65537, 65539, 65541, 65543, 65545, 65547, 65554, 65550, 65557, 65553, 65549, 65556, 65552, 65548, 65555, 65551, 65558, 65563, 65568, 65562, 65567, 65561, 65566, 65560, 65546]
+LZW Size: 703 bits
+LZW CR: 2.28
+
+--- Sequence 5 ---
+Original: 5ee3ee5e3L656L5333L336L633356633L3eeLe56L6e63LL66565e5eL65e55L55eLe6L356e3L56L3653ee63L63eeLLL5L565e
+Entropy: 2.3219
+Input size: 1600 bits
+Code: 53, Element: 5, Bits: 16
+Code: 101, Element: e, Bits: 16
+Code: 101, Element: e, Bits: 16
+Code: 51, Element: 3, Bits: 16
+Code: 65537, Element: ee, Bits: 17
+Code: 65536, Element: 5e, Bits: 17
+Code: 51, Element: 3, Bits: 16
+Code: 76, Element: L, Bits: 16
+Code: 54, Element: 6, Bits: 16
+Code: 53, Element: 5, Bits: 16
+Code: 54, Element: 6, Bits: 16
+Code: 76, Element: L, Bits: 16
+Code: 53, Element: 5, Bits: 16
+Code: 51, Element: 3, Bits: 16
+Code: 65549, Element: 33, Bits: 17
+Code: 76, Element: L, Bits: 16
+Code: 65549, Element: 33, Bits: 17
+Code: 65546, Element: 6L, Bits: 17
+Code: 54, Element: 6, Bits: 16
+Code: 65549, Element: 33, Bits: 17
+Code: 51, Element: 3, Bits: 16
+Code: 65545, Element: 56, Bits: 17
+Code: 65554, Element: 63, Bits: 17
+Code: 65542, Element: 3L, Bits: 17
+Code: 65539, Element: 3e, Bits: 17
+Code: 101, Element: e, Bits: 16
+Code: 76, Element: L, Bits: 16
+Code: 101, Element: e, Bits: 16
+Code: 65545, Element: 56, Bits: 17
+Code: 65543, Element: L6, Bits: 17
+Code: 101, Element: e, Bits: 16
+Code: 65554, Element: 63, Bits: 17
+Code: 76, Element: L, Bits: 16
+Code: 65543, Element: L6, Bits: 17
+Code: 65544, Element: 65, Bits: 17
+Code: 65544, Element: 65, Bits: 17
+Code: 65563, Element: e5, Bits: 17
+Code: 65561, Element: eL, Bits: 17
+Code: 65571, Element: 65e, Bits: 17
+Code: 53, Element: 5, Bits: 16
+Code: 53, Element: 5, Bits: 16
+Code: 65547, Element: L5, Bits: 17
+Code: 65536, Element: 5e, Bits: 17
+Code: 65562, Element: Le, Bits: 17
+Code: 65546, Element: 6L, Bits: 17
+Code: 65556, Element: 35, Bits: 17
+Code: 54, Element: 6, Bits: 16
+Code: 65538, Element: e3, Bits: 17
+Code: 65547, Element: L5, Bits: 17
+Code: 65580, Element: 6L3, Bits: 17
+Code: 65544, Element: 65, Bits: 17
+Code: 65560, Element: 3ee, Bits: 17
+Code: 65567, Element: 63L, Bits: 17
+Code: 65554, Element: 63, Bits: 17
+Code: 65537, Element: ee, Bits: 17
+Code: 65568, Element: LL, Bits: 17
+Code: 65547, Element: L5, Bits: 17
+Code: 65584, Element: L56, Bits: 17
+Code: 65536, Element: 5e, Bits: 17
+RLE Result: 152e132e151e131L1615161L15331L23161L16331526231L132e1L1e15161L161e16132L261516151e151e1L16151e251L251e1L1e161L1315161e131L15161L131615132e16131L16132e3L151L1516151e
+RLE CR: -
+LZW Codes: [53, 101, 101, 51, 65537, 65536, 51, 76, 54, 53, 54, 76, 53, 51, 65549, 76, 65549, 65546, 54, 65549, 51, 65545, 65554, 65542, 65539, 101, 76, 101, 65545, 65543, 101, 65554, 76, 65543, 65544, 65544, 65563, 65561, 65571, 53, 53, 65547, 65536, 65562, 65546, 65556, 54, 65538, 65547, 65580, 65544, 65560, 65567, 65554, 65537, 65568, 65547, 65584, 65536]
+LZW Size: 980 bits
+LZW CR: 1.63
+
+--- Sequence 6 ---
+Original: 33eeLeeLeLeLLeeL5Leeee55L5eLLLLe6L35eeeLLL3LeeeL6Le366Le5ee5ee5Le5e55e5e3eL5Le3e65Le5LLeee3eLee5eeL5
+Entropy: 1.9821
+Input size: 1600 bits
+Code: 51, Element: 3, Bits: 16
+Code: 51, Element: 3, Bits: 16
+Code: 101, Element: e, Bits: 16
+Code: 101, Element: e, Bits: 16
+Code: 76, Element: L, Bits: 16
+Code: 65538, Element: ee, Bits: 17
+Code: 65540, Element: Le, Bits: 17
+Code: 65542, Element: LeL, Bits: 17
+Code: 65540, Element: Le, Bits: 17
+Code: 65539, Element: eL, Bits: 17
+Code: 53, Element: 5, Bits: 16
+Code: 65544, Element: Lee, Bits: 17
+Code: 65538, Element: ee, Bits: 17
+Code: 53, Element: 5, Bits: 16
+Code: 65546, Element: 5L, Bits: 17
+Code: 53, Element: 5, Bits: 16
+Code: 65539, Element: eL, Bits: 17
+Code: 76, Element: L, Bits: 16
+Code: 65553, Element: LL, Bits: 17
+Code: 101, Element: e, Bits: 16
+Code: 54, Element: 6, Bits: 16
+Code: 76, Element: L, Bits: 16
+Code: 51, Element: 3, Bits: 16
+Code: 65551, Element: 5e, Bits: 17
+Code: 65541, Element: eeL, Bits: 17
+Code: 65553, Element: LL, Bits: 17
+Code: 51, Element: 3, Bits: 16
+Code: 65547, Element: Leee, Bits: 17
+Code: 76, Element: L, Bits: 16
+Code: 65556, Element: 6L, Bits: 17
+Code: 101, Element: e, Bits: 16
+Code: 51, Element: 3, Bits: 16
+Code: 54, Element: 6, Bits: 16
+Code: 65565, Element: 6Le, Bits: 17
+Code: 65559, Element: 5ee, Bits: 17
+Code: 65570, Element: 5ee5, Bits: 17
+Code: 65540, Element: Le, Bits: 17
+Code: 65551, Element: 5e, Bits: 17
+Code: 65549, Element: 55, Bits: 17
+Code: 101, Element: e, Bits: 16
+Code: 65551, Element: 5e, Bits: 17
+Code: 65537, Element: 3e, Bits: 17
+Code: 76, Element: L, Bits: 16
+Code: 65546, Element: 5L, Bits: 17
+Code: 65566, Element: e3, Bits: 17
+Code: 65555, Element: e6, Bits: 17
+Code: 65579, Element: 5Le, Bits: 17
+Code: 65546, Element: 5L, Bits: 17
+Code: 65547, Element: Leee, Bits: 17
+Code: 65577, Element: 3eL, Bits: 17
+Code: 65548, Element: ee5, Bits: 17
+Code: 65541, Element: eeL, Bits: 17
+Code: 53, Element: 5, Bits: 16
+RLE Result: 232e1L2e1L1e1L1e2L2e1L151L4e251L151e4L1e161L13153e3L131L3e1L161L1e13261L1e152e152e151L1e151e251e151e131e1L151L1e131e16151L1e152L3e131e1L2e152e1L15
+RLE CR: -
+LZW Codes: [51, 51, 101, 101, 76, 65538, 65540, 65542, 65540, 65539, 53, 65544, 65538, 53, 65546, 53, 65539, 76, 65553, 101, 54, 76, 51, 65551, 65541, 65553, 51, 65547, 76, 65556, 101, 51, 54, 65565, 65559, 65570, 65540, 65551, 65549, 101, 65551, 65537, 76, 65546, 65566, 65555, 65579, 65546, 65547, 65577, 65548, 65541, 53]
+LZW Size: 880 bits
+LZW CR: 1.82
+
+--- Sequence 7 ---
+Original: lhyb7if73rwj4g2cqbkxkgrqgy1kc08xw7zviyuvqsvp9mgyyy5debz20y6o4mf8fq62ab7nhejqw55o0soj94j3xz8zrkxywqnu
+Entropy: 4.9608
+Input size: 1600 bits
+Code: 108, Element: l, Bits: 16
+Code: 104, Element: h, Bits: 16
+Code: 121, Element: y, Bits: 16
+Code: 98, Element: b, Bits: 16
+Code: 55, Element: 7, Bits: 16
+Code: 105, Element: i, Bits: 16
+Code: 102, Element: f, Bits: 16
+Code: 55, Element: 7, Bits: 16
+Code: 51, Element: 3, Bits: 16
+Code: 114, Element: r, Bits: 16
+Code: 119, Element: w, Bits: 16
+Code: 106, Element: j, Bits: 16
+Code: 52, Element: 4, Bits: 16
+Code: 103, Element: g, Bits: 16
+Code: 50, Element: 2, Bits: 16
+Code: 99, Element: c, Bits: 16
+Code: 113, Element: q, Bits: 16
+Code: 98, Element: b, Bits: 16
+Code: 107, Element: k, Bits: 16
+Code: 120, Element: x, Bits: 16
+Code: 107, Element: k, Bits: 16
+Code: 103, Element: g, Bits: 16
+Code: 114, Element: r, Bits: 16
+Code: 113, Element: q, Bits: 16
+Code: 103, Element: g, Bits: 16
+Code: 121, Element: y, Bits: 16
+Code: 49, Element: 1, Bits: 16
+Code: 107, Element: k, Bits: 16
+Code: 99, Element: c, Bits: 16
+Code: 48, Element: 0, Bits: 16
+Code: 56, Element: 8, Bits: 16
+Code: 120, Element: x, Bits: 16
+Code: 119, Element: w, Bits: 16
+Code: 55, Element: 7, Bits: 16
+Code: 122, Element: z, Bits: 16
+Code: 118, Element: v, Bits: 16
+Code: 105, Element: i, Bits: 16
+Code: 121, Element: y, Bits: 16
+Code: 117, Element: u, Bits: 16
+Code: 118, Element: v, Bits: 16
+Code: 113, Element: q, Bits: 16
+Code: 115, Element: s, Bits: 16
+Code: 118, Element: v, Bits: 16
+Code: 112, Element: p, Bits: 16
+Code: 57, Element: 9, Bits: 16
+Code: 109, Element: m, Bits: 16
+Code: 65560, Element: gy, Bits: 17
+Code: 121, Element: y, Bits: 16
+Code: 121, Element: y, Bits: 16
+Code: 53, Element: 5, Bits: 16
+Code: 100, Element: d, Bits: 16
+Code: 101, Element: e, Bits: 16
+Code: 98, Element: b, Bits: 16
+Code: 122, Element: z, Bits: 16
+Code: 50, Element: 2, Bits: 16
+Code: 48, Element: 0, Bits: 16
+Code: 121, Element: y, Bits: 16
+Code: 54, Element: 6, Bits: 16
+Code: 111, Element: o, Bits: 16
+Code: 52, Element: 4, Bits: 16
+Code: 109, Element: m, Bits: 16
+Code: 102, Element: f, Bits: 16
+Code: 56, Element: 8, Bits: 16
+Code: 102, Element: f, Bits: 16
+Code: 113, Element: q, Bits: 16
+Code: 54, Element: 6, Bits: 16
+Code: 50, Element: 2, Bits: 16
+Code: 97, Element: a, Bits: 16
+Code: 65539, Element: b7, Bits: 17
+Code: 110, Element: n, Bits: 16
+Code: 104, Element: h, Bits: 16
+Code: 101, Element: e, Bits: 16
+Code: 106, Element: j, Bits: 16
+Code: 113, Element: q, Bits: 16
+Code: 119, Element: w, Bits: 16
+Code: 53, Element: 5, Bits: 16
+Code: 53, Element: 5, Bits: 16
+Code: 111, Element: o, Bits: 16
+Code: 48, Element: 0, Bits: 16
+Code: 115, Element: s, Bits: 16
+Code: 111, Element: o, Bits: 16
+Code: 106, Element: j, Bits: 16
+Code: 57, Element: 9, Bits: 16
+Code: 52, Element: 4, Bits: 16
+Code: 106, Element: j, Bits: 16
+Code: 51, Element: 3, Bits: 16
+Code: 120, Element: x, Bits: 16
+Code: 122, Element: z, Bits: 16
+Code: 56, Element: 8, Bits: 16
+Code: 122, Element: z, Bits: 16
+Code: 114, Element: r, Bits: 16
+Code: 65554, Element: kx, Bits: 17
+Code: 121, Element: y, Bits: 16
+Code: 119, Element: w, Bits: 16
+Code: 113, Element: q, Bits: 16
+Code: 110, Element: n, Bits: 16
+Code: 117, Element: u, Bits: 16
+RLE Result: 1l1h1y1b171i1f17131r1w1j141g121c1q1b1k1x1k1g1r1q1g1y111k1c10181x1w171z1v1i1y1u1v1q1s1v1p191m1g3y151d1e1b1z12101y161o141m1f181f1q16121a1b171n1h1e1j1q1w251o101s1o1j19141j131x1z181z1r1k1x1y1w1q1n1u
+RLE CR: -
+LZW Codes: [108, 104, 121, 98, 55, 105, 102, 55, 51, 114, 119, 106, 52, 103, 50, 99, 113, 98, 107, 120, 107, 103, 114, 113, 103, 121, 49, 107, 99, 48, 56, 120, 119, 55, 122, 118, 105, 121, 117, 118, 113, 115, 118, 112, 57, 109, 65560, 121, 121, 53, 100, 101, 98, 122, 50, 48, 121, 54, 111, 52, 109, 102, 56, 102, 113, 54, 50, 97, 65539, 110, 104, 101, 106, 113, 119, 53, 53, 111, 48, 115, 111, 106, 57, 52, 106, 51, 120, 122, 56, 122, 114, 65554, 121, 119, 113, 110, 117]
+LZW Size: 1555 bits
+LZW CR: 1.03
+
+--- Sequence 8 ---
+Original: 1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+Entropy: -0.0000
+Input size: 1600 bits
+Code: 49, Element: 1, Bits: 16
+Code: 65536, Element: 11, Bits: 17
+Code: 65537, Element: 111, Bits: 17
+Code: 65538, Element: 1111, Bits: 17
+Code: 65539, Element: 11111, Bits: 17
+Code: 65540, Element: 111111, Bits: 17
+Code: 65541, Element: 1111111, Bits: 17
+Code: 65542, Element: 11111111, Bits: 17
+Code: 65543, Element: 111111111, Bits: 17
+Code: 65544, Element: 1111111111, Bits: 17
+Code: 65545, Element: 11111111111, Bits: 17
+Code: 65546, Element: 111111111111, Bits: 17
+Code: 65547, Element: 1111111111111, Bits: 17
+Code: 65543, Element: 111111111, Bits: 17
+RLE Result: 1001
+RLE CR: 25.0
+LZW Codes: [49, 65536, 65537, 65538, 65539, 65540, 65541, 65542, 65543, 65544, 65545, 65546, 65547, 65543]
+LZW Size: 237 bits
+LZW CR: 6.75
